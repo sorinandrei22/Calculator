@@ -1,0 +1,30 @@
+#calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(211, 235, 235);
+}
+#container {
+    background-color: black;
+    border: 10px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+    gap: 3px;
+}
+#display {
+    grid-column: 1 / -1;
+    background-color: #F9F5EB;
+    padding: 5px;
+    font-size: 4.5em;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#zero {
+    grid-column: span 3;
+}
+.button {
+    font-size: 2em;
+}
